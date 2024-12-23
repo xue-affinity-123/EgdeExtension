@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "收藏夹管理器",
+  "version": "3.0",
+  "description": "对收藏夹进行排序、导出HTML和复制URL",
+  "permissions": [
+    "bookmarks",
+    "downloads",
+    "tabs",
+    "sidePanel"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "打开收藏夹管理器"
+  },
+  "side_panel": {
+    "default_path": "popup.html"
+  }
+}
